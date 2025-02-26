@@ -71,13 +71,13 @@ export const Route = createFileRoute("/")({
 const chat = createServerFn(
   "POST",
   async ({ messages }: { messages: Message[] }) => {
-    return fetch("http://127.0.0.1:11434/api/chat", {
+    return fetch("http://ec2-13-60-168-247.eu-north-1.compute.amazonaws.com:11434/api/chat", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        model: "deepseek-r1:32b",
+        model: "xIn:latest",
         streaming: true,
         options: {
           temperature: 0.1,
