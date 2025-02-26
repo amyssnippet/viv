@@ -77,7 +77,7 @@ const chat = createServerFn(
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        model: "xIn:latest",
+        model: "deepseek-r1:8b",
         streaming: true,
         options: {
           temperature: 0.1,
