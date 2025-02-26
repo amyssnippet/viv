@@ -77,7 +77,7 @@ const chat = createServerFn(
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        model: "xIn-v2",
+        model: "xIn-v2:latest",
         streaming: true,
         options: {
           temperature: 0.1,
